@@ -1,5 +1,5 @@
 import java.util.*;
-//Change
+
 public class QuestionD{
 
 	public static int start = 2;
@@ -48,11 +48,21 @@ public class QuestionD{
 		return solutionCounter;
 	}
 
-	public int sum (int input){
+	// Summation of a given number
+	public int summation (int n){
 		int rsum = 0;
-		for(int i = 0; i <= input; i++){
+		for(int i = 0; i <= n; i++){
 			rsum += i;
 		}
 		return rsum;
 	}
+	
+	// Checks if a given number is a perfect square.
+	public final static boolean isPerfectSquare(double n) {		
+		if (n < 0){
+			return false;
+		}
+  		long tst = (long)(Math.sqrt(n));
+  		return tst*tst == n;
+	}	
 }

@@ -27,7 +27,7 @@ public class math{
 	public int random(){
 		Random rnd = new Random();
 		return rnd.nextInt();
-	}
+	}	
 	
 	// Random number generator with a minimum and maximum bound.
 	public int random(int min, int max){
@@ -55,7 +55,7 @@ public class math{
 	 */
 
 	// Checks if a given number is a perfect square.
-	public final static boolean isPerfectSquare(int n) {		
+	public final static boolean isPerfectSquare(double n) {		
 		if (n < 0){
 			return false;
 		}
