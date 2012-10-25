@@ -19,7 +19,7 @@ public class QuestionD{
 	}
 	
 	// Helper function to get the number of elements to be added to the correct amount
-	public int numElementsAdded(int lowerBound]) {
+	public int numElementsAdded(int lowerBound) {
 		int rackSize = 1; // sets initial rack size to be just one ball
 		int numElementsAdded = 2; // initial number of elements to be added
 
