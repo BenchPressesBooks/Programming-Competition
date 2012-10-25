@@ -1,10 +1,20 @@
 import java.util.*;
-import java.Math.*;
-
 
 public class test{
 
     public static void main(String[] args) {
-        System.out.println(sum(3));
+        
+        test test = new test();
+
+        System.out.println("Summation of " + args[0] + " is " + test.sum(Integer.parseInt(args[0])));
     }
+
+	public int sum (int input){
+	    int rsum = 0;
+	    	for(int i = 0; i <= input; i++){
+                rsum += i;
+            }
+        return rsum;
+	}
+
 }
