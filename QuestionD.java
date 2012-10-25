@@ -24,8 +24,8 @@ public class QuestionD{
 		int numElementsAdded = 2; // initial number of elements to be added
 
 		while((numElementsAdded + rackSize) < lowerBound) {
-			numElementsAdded++;
 			rackSize += numElementsAdded;
+			numElementsAdded++;
 		}
 		return numElementsAdded;
 	}
@@ -35,7 +35,7 @@ public class QuestionD{
 		int lowerBound = args[0];
 		int upperBound = args[1];
 		
-		for(int numElementsRack = lowerBound; (numElementsRack + 1) < upperBound; numElementsAdded++) {
+		for(int (numElementsRack + 1) = lowerBound; (numElementsRack + 1) < upperBound; numElementsAdded++) {
 			if((numElementsRack + 1).isSquareNumber()) {
 				solutionCounter++;
 				numElementsRack += numElementsAdded;
