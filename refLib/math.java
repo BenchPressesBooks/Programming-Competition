@@ -13,6 +13,7 @@ public class math{
 		} else {
 			return n * factorial(n-1);
 		}
+	}
 
 	// Summation of a given number
 	public int summation (int n){
@@ -21,6 +22,23 @@ public class math{
 			rsum += i;
 		}
 		return rsum;
+	}
+	
+	// Calculate pi to the nth position
+	public double calcPi(double iter) {
+		double output = 0.0;
+		boolean positive = true;
+		for (int i=0; i<iter; i++) { 
+			double sum = 1.0/(2.0*((double)i) + 1.0);
+			if (positive) 
+				output += sum;
+			else 
+				output -= sum;
+		
+			positive = !positive;
+		}
+
+		return output;
 	}
 	
 	// Random number generator
@@ -43,12 +61,12 @@ public class math{
 	public String evenOrOdd(int n){
 		int c = n%2;
 		
-		if(c = 1){
+		if(c == 1){
 			return "odd";
 		} else {
 			return "even";
 		}
-	
+	}
 
 	/*
 	 *	Boolean Functions
@@ -73,4 +91,5 @@ public class math{
 		}
 		return true;
 	}
+
 }

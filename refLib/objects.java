@@ -8,8 +8,9 @@ public class objects{
 	public static void main(String[] args) {
 		Scanner r = new Scanner(System.in);
 		objects o = new objects();
-		
-		r.useDelimiter("\\s+");
+		math m = new math();
+		double pi = r.nextDouble();
+		/*r.useDelimiter("\\s+");
 		
 		while(r.hasNextLine()) {
 	
@@ -20,7 +21,9 @@ public class objects{
 			o.max = Integer.parseInt(elements[1]);
 			
 			System.out.println(o.min + " " + o.max);
-			System.out.print("\n");
-		}
+			*/
+			
+			System.out.print(m.calcPi(pi));
+		//}
 	}
 }
